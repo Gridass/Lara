@@ -15,7 +15,7 @@
     @endforeach
 
     </div>
-
+    <p><a href="/reviews" class="btn btn-default">Отзывы</a></p>
     <div>
         <?php echo $articles->render(); ?>
     </div>
