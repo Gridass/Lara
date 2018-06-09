@@ -8,6 +8,7 @@
     <option value="1">Опубликовано</option>
   @endif
 </select>
+
 <label for="">Заголовок</label>
 <input type="text" class="form-control" name="title" placeholder="Заголовок новости" value="{{$article->title or ""}}" required>
 

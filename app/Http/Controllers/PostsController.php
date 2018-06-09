@@ -29,6 +29,7 @@ class PostsController extends Controller
        'slug' => 'required',
        'description_short' => 'required',
        'description' =>'required',
+       'image'=>''
 
    ]);
 

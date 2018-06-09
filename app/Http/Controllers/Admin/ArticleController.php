@@ -6,7 +6,8 @@ use App\Article;
 use App\Category;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
+use Intervention\Image\ImageManager;
+use Intervention\Image\ImageManagerStatic as Image;
 class ArticleController extends Controller
 {
     /**
@@ -49,7 +50,11 @@ class ArticleController extends Controller
         if($request->input('categories')) :
             $article->categories()->attach($request->input('categories'));
         endif;
-
+        $request->file('image');
+        $imgName = ($article->id.'.jpeg');
+        $image = Image::make($request->file('image'));
+        $fullPath = public_path('/images/');
+        $image->save($fullPath . DIRECTORY_SEPARATOR . $imgName);
         return redirect()->route('admin.article.index');
     }
 

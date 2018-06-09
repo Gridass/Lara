@@ -9,7 +9,7 @@
                 <h2 class="blog-post-title">{{$article->title}}</h2>
                 <p class="blog-post-meta"><a href="#">{{$article->created_ad}}</a></p>
                 <p>{{$article->description}}</p>
-                <p>{{ $article->image }}</p>
+                <img src="http://lara/public/images/картинка.jpeg">
             </div>
         </div>
     </div>
