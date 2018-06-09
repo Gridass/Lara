@@ -22,6 +22,7 @@
 
         <div class="form-group">
             <button class="btn btn-primary" type="submit">Create</button>
+            <p><a href="{{route('reviews.index')}}" class="btn btn-primary pull-left"><i class="fa fa-plus-square-o"></i>Back</a><p/><br>
         </div>
     </form>
 

@@ -21,7 +21,8 @@
         </div>
 
         <div class="form-group">
-            <button class="btn btn-primary" type="submit">Update</button>
+            <button class="btn btn-primary" type="submit">Update</button><br>
+            <p><a href="{{route('reviews.index')}}" class="btn btn-primary pull-left"><i class="fa fa-plus-square-o"></i> Back</a><p/><br>
         </div>
         @include('layouts.errors')
             </form>
