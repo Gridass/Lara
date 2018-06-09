@@ -8,7 +8,6 @@
     <option value="1">Опубликовано</option>
   @endif
 </select>
-
 <label for="">Заголовок</label>
 <input type="text" class="form-control" name="title" placeholder="Заголовок новости" value="{{$article->title or ""}}" required>
 
@@ -20,10 +19,9 @@
   @include('admin.articles.partials.categories', ['categories' => $categories])
 </select>
 
-<div enctype="multipart/form-data" method="post" action="putimage.php">
-    Изображение: <input type="file" name="image" />
+{{Form::label('image','Загрузка изображения')}}
+{{Form::file('image')}}
 
-</div>
 <label for="">Краткое описание</label>
 <textarea class="form-control" id="description_short" name="description_short">{{$article->description_short or ""}}</textarea>
 
@@ -31,5 +29,4 @@
 <textarea class="form-control" id="description" name="description">{{$article->description or ""}}</textarea>
 
 <hr />
-
 <input class="btn btn-primary" type="submit" value="Сохранить"> 

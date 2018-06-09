@@ -4,7 +4,7 @@
     @foreach($articles as $article)
         <div class="col-md-4">
                 <h2>{{$article->title}}</h2>
-                <p>{{ $article->image }}</p>
+                <p>{{$article->image }}</p>
                 <p> {{$article->description_short}}</p>
                 <p><a href="/posts/{{$article->id}}" class="btn btn-default">Читать далее...</a></p>
 

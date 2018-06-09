@@ -112,4 +112,5 @@ class ArticleController extends Controller
 
         return redirect()->route('admin.article.index');
     }
+
 }
