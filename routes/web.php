@@ -4,6 +4,7 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['aut
     Route::get('/', 'DashboardController@dashboard')->name('admin.index');
     Route::resource('/category', 'CategoryController', ['as'=>'admin']);
     Route::resource('/article', 'ArticleController', ['as'=>'admin']);
+    Route::resource('/reviews', 'AdminReviewsController', ['as'=>'admin']);
 });
 
 
@@ -13,15 +14,16 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 
-
+Route::resource('/reviews', 'ReviewController');
+/*
 Route::get('/reviews', "ReviewController@index");
-Route::get('/reviews/create', "ReviewController@create");
-Route::get('/reviews/{review}', "ReviewController@show");
+Route::post ('/reviews/create', "ReviewController@create");
+Route::get('/reviews/{id}/show ', "ReviewController@show");
 Route::post('/review', "ReviewController@store");
-Route::get('/reviews/{review}/edit', "ReviewController@edit");
-Route::patch('/reviews/{review}', "ReviewController@update");
-Route::delete('/reviews/{reviews}', "ReviewController@destroy");
-
+Route::get('/reviews/{id}/edit', "ReviewController@edit");
+Route::post('/reviews/{id}', "ReviewController@update");
+Route::delete('/reviews/{id}', "ReviewController@destroy");
+*/
 
 
 

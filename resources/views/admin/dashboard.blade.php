@@ -31,9 +31,9 @@
                 <a class="btn btn-block btn-default" href="{{route('admin.category.index')}}">Список категорий</a>
             </div>
             <div class="col-sm-6">
-                <a class="btn btn-block btn-default" href="{{route('admin.article.create')}}">Создать Материал</a>
+                <a class="btn btn-block btn-default" href="{{route('admin.article.create')}}">Создать новость</a>
                 <a class="btn btn-block btn-default" href="{{route('admin.article.index')}}">Список новостей</a>
-
+                <a class="btn btn-block btn-default" href="{{route('admin.reviews.index')}}">Список отзывов</a>
             </div>
         </div>
     </div>
