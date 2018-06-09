@@ -19,11 +19,13 @@
             <label for="message">Text</label>
             <textarea class="form-control" type="text" name="message" id="message" required></textarea>
         </div>
+        <div class="g-recaptcha" data-sitekey="6LdLIF4UAAAAAG0W6wfH6DAMgejHNE2RAyUOvRwV"></div>
 
         <div class="form-group">
             <button class="btn btn-primary" type="submit">Create</button>
             <p><a href="{{route('reviews.index')}}" class="btn btn-primary pull-left"><i class="fa fa-plus-square-o"></i>Back</a><p/><br>
         </div>
+
     </form>
 
 

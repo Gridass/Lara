@@ -44,6 +44,7 @@ class ReviewController extends Controller
             'name' => 'required',
             'email' => 'required|email',
             'message' => 'required',
+
         ]);
         $review->update(request(['name','email','message']));
         return redirect('/reviews');

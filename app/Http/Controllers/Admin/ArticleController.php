@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Intervention\Image\ImageManager;
 use Intervention\Image\ImageManagerStatic as Image;
+use Illuminate\Http\UploadedFile;
 class ArticleController extends Controller
 {
     /**
@@ -44,17 +45,21 @@ class ArticleController extends Controller
      */
     public function store(Request $request)
     {
+
         $article = Article::create($request->all());
 
         // Categories
         if($request->input('categories')) :
             $article->categories()->attach($request->input('categories'));
         endif;
-        $request->file('image');
-        $imgName = ($article->id.'.jpeg');
+
+        $imgName = ($article->id . '.' . $request->file('image')->getClientOriginalExtension());
         $image = Image::make($request->file('image'));
         $fullPath = public_path('/images/');
         $image->save($fullPath . DIRECTORY_SEPARATOR . $imgName);
+        $article->image = $imgName;
+        $article->save();
+
         return redirect()->route('admin.article.index');
     }
 
@@ -117,5 +122,6 @@ class ArticleController extends Controller
 
         return redirect()->route('admin.article.index');
     }
+
 
 }
