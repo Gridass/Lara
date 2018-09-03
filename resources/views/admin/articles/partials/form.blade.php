@@ -1,3 +1,13 @@
+<head><!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125145066-1"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-125145066-1');
+  </script>
+</head>
 <label for="">Статус</label>
 <select class="form-control" name="published">
   @if (isset($article->id))

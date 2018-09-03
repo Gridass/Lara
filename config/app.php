@@ -166,7 +166,6 @@ return [
         App\Providers\BlogServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
-        Mews\Captcha\CaptchaServiceProvider::class,
 
     ],
 
