@@ -1,13 +1,14 @@
 @extends('layouts.layout')
 @section('content')
-    <div class="row">
+    <h1 align="center" style="color: blue;">News</h1>
+    <div class="row" align="center">
     @foreach($articles as $article)
         <div class="col-md-4">
                 <h2>{{$article->title}}</h2>
                 <img src="/images/{{ $article->image }}"  width=100%" height="100%" >
 
                 <p> {{$article->description_short}}</p>
-                <p><a href="/posts/{{$article->id}}" class="btn btn-default">Читать далее...</a></p>
+                <p align="left"><a href="/posts/{{$article->id}}" class="btn btn-primary" >Далее...</a></p>
 
                 </form>
 

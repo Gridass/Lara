@@ -20,9 +20,11 @@
             <textarea class="form-control" type="text" name="message" id="message" required>{{$review->message}}</textarea>
         </div>
 
-        <div class="form-group">
+        <div class="form-group" style="position:fixed; top:85%; left:8%">
             <button class="btn btn-primary" type="submit">Update</button><br>
+            <div style="position:fixed; top:85%; left:15%">
             <p><a href="{{route('reviews.index')}}" class="btn btn-primary pull-left"><i class="fa fa-plus-square-o"></i> Back</a><p/><br>
+        </div>
         </div>
         @include('layouts.errors')
             </form>

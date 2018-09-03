@@ -1,6 +1,7 @@
 @extends('layouts.layout')
 @section('content')
-    <div class="row">
+    <h2 align="center" style="color: blue;">Коментарии</h2>
+    <div class="row" align="center">
         @foreach($reviews as $review)
             <div class="col-md-4">
                 <h2>{{$review->name}}</h2>
@@ -17,10 +18,12 @@
 
         @endforeach
     </div>
-    <div>
+    <footer>
+        <div style="position:fixed; top:85%; left:5%">
     <p><a href="/reviews/create" class="btn btn-primary">Создать</a></p>
-    </div>
+        </div>
     <div>
         <?php echo $reviews->render(); ?>
     </div>
+    </footer>
 @endsection

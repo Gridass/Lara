@@ -23,8 +23,8 @@
 
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="/">News</a></li>
-                <li class="active"><a href="/reviews">Reviews</a></li>
+                <li><a class="active" href="/">News</a></li>
+                <li><a class="active" href="/reviews">Reviews</a></li>
                 <li><a href="/reviews/create">Create review</a></li>
                 @guest
                 <<li class="nav-item">

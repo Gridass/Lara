@@ -34,7 +34,7 @@ class AdminReviewsController extends Controller
         Review::create(
             request(array( 'name','email','message'))
         );
-        return redirect('/reviews');
+        return redirect('/admin/reviews');
 
     }
     public function edit(Review $review){
@@ -48,11 +48,11 @@ class AdminReviewsController extends Controller
             'message' => 'required',
         ]);
         $review->update(request(['name','email','message']));
-        return redirect('/reviews');
+        return redirect('/admin/reviews');
     }
     public function destroy(Review $review){
         $review->delete();
-        return redirect('/reviews');
+        return redirect('/admin/reviews');
     }
 }
 

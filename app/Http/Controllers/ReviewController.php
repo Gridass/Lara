@@ -8,7 +8,7 @@ class ReviewController extends Controller
 {
     public function index(){
 
-        $reviews= DB::table('reviews')->paginate(3);
+        $reviews= DB::table('reviews')->paginate(6);
         return view('reviews.index', compact('reviews' ));
 
 
@@ -23,8 +23,8 @@ class ReviewController extends Controller
     }
     public function store(){
         $this->validate(request(),[
-            'name' => 'required',
-            'email' => 'required',
+            'name' => 'required|min:2',
+            'email' => 'required|email',
             'message' => 'required',
 
         ]);
@@ -41,17 +41,17 @@ class ReviewController extends Controller
     }
     public function update(Review $review){
         $this->validate(request(),[
-            'name' => 'required',
+            'name' => 'required|min:2',
             'email' => 'required|email',
             'message' => 'required',
 
         ]);
         $review->update(request(['name','email','message']));
-        return redirect('/reviews');
+        return redirect('/admin/reviews');
     }
     public function destroy(Review $review){
         $review->delete();
-        return redirect('/reviews');
+        return redirect('/admin/reviews');
     }
 }
 

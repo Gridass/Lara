@@ -1,8 +1,7 @@
 @extends('layouts.layout')
 
 @section('content')
-    <div class="row">
-
+    <div class="row" >
         <div class="col-sm-8 blog-main">
             <div class="blog-post">
 

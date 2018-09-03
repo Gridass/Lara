@@ -20,7 +20,7 @@
             <textarea class="form-control" type="text" name="message" id="message" required>{{$review->message}}</textarea>
         </div>
 
-        <div class="form-group">
+        <div class="form-group" style="position:fixed; top:83%; left:5%">
             <button class="btn btn-primary" type="submit">Update</button>
         </div>
         @include('layouts.errors')

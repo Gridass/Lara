@@ -21,8 +21,10 @@
         </div>
         <div class="g-recaptcha" data-sitekey="6LdLIF4UAAAAAG0W6wfH6DAMgejHNE2RAyUOvRwV"></div>
 
-        <div class="form-group">
+        <div class="form-group" style="position:fixed; top:85%; left:8%">
             <button class="btn btn-primary" type="submit">Create</button>
+        </div>
+        <div class="form-group" style="position:fixed; top:85%; left:13%">
             <p><a href="{{route('reviews.index')}}" class="btn btn-primary pull-left"><i class="fa fa-plus-square-o"></i>Back</a><p/><br>
         </div>
 

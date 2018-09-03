@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 @section('content')
-    <div class="row">
+    <div class="row" align="center">
         @foreach($reviews as $review)
             <div class="col-md-4">
                 <h2>{{$review->name}}</h2>
@@ -18,7 +18,7 @@
         @endforeach
     </div>
 <br>
-    <div >
+    <div style="position:fixed; top:83%; left:5%">
         <a href="{{route('admin.index')}}" class="btn btn-primary pull-left"><i class="fa fa-plus-square-o"></i> Назад</a><br>
         <?php echo $reviews->render(); ?>
     </div>
