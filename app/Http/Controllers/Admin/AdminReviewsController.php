@@ -10,7 +10,7 @@ class AdminReviewsController extends Controller
 {
     public function index(){
 
-        $reviews= DB::table('reviews')->paginate(3);
+        $reviews= DB::table('reviews')->paginate(24);
         return view('admin.reviews.index', compact('reviews' ));
 
 

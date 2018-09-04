@@ -23,7 +23,7 @@
 
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li><a class="active" href="/">News</a></li>
+                <li><a class="active" href="/">Portfolio</a></li>
                 <li><a class="active" href="/reviews">Reviews</a></li>
                 <li><a href="/reviews/create">Create review</a></li>
                 @guest

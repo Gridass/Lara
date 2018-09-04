@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 @section('content')
-    <h2 align="center" style="color: blue;">Коментарии</h2>
+    <h2 align="center">Коментарии</h2>
     <div class="row" align="center">
         @foreach($reviews as $review)
             <div class="col-md-4">

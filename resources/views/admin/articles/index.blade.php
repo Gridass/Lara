@@ -8,7 +8,7 @@
 
   <hr>
 
-  <a href="{{route('admin.article.create')}}" class="btn btn-primary pull-right"><i class="fa fa-plus-square-o"></i> Создать новость</a>
+  <a href="{{route('admin.article.create')}}" class="btn btn-primary pull-right"><i class="fa fa-plus-square-o"></i> Создать пост</a>
   <a href="{{route('admin.index')}}" class="btn btn-primary pull-left"><i class="fa fa-plus-square-o"></i> Назад</a>
   <table class="table table-striped">
     <thead>
