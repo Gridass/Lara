@@ -19,7 +19,7 @@
         @endforeach
     </div>
     <footer>
-        <div style="position:fixed; top:85%; left:5%">
+        <div style="position:fixed; top:90%; left:5%">
     <p><a href="/reviews/create" class="btn btn-primary">Создать</a></p>
         </div>
     <div>

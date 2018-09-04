@@ -1,5 +1,6 @@
 @extends('layouts.layout')
 @section('content')
+
     <h2>Create a review</h2>
 
     <form action="/reviews" method="post">
@@ -21,7 +22,7 @@
         </div>
         <div class="g-recaptcha" data-sitekey="6LdLIF4UAAAAAG0W6wfH6DAMgejHNE2RAyUOvRwV"></div>
 
-        <div class="form-group" style="position:fixed; top:85%; left:8%">
+        <div class="form-group" style="position:fixed; top:85%; left:6%">
             <button class="btn btn-primary" type="submit">Create</button>
         </div>
         <div class="form-group" style="position:fixed; top:85%; left:13%">

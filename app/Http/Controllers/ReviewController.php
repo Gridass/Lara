@@ -8,7 +8,7 @@ class ReviewController extends Controller
 {
     public function index(){
 
-        $reviews= DB::table('reviews')->paginate(6);
+        $reviews= DB::table('reviews')->paginate(24);
         return view('reviews.index', compact('reviews' ));
 
 

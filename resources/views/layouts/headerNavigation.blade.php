@@ -18,7 +18,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">Apollo</a>
+            <a class="navbar-brand" href="/admin">Apollo</a>
         </div>
 
         <div id="navbar" class="collapse navbar-collapse">
