@@ -19,7 +19,7 @@
     </div>
 <br>
     <div style="position:fixed; top:89%; left:5%">
-        <a href="{{route('admin.index')}}" class="btn btn-primary btn-sm pull-left"><i class="fa fa-plus-square-o"></i> Назад</a><br>
+        <a href="{{route('admin.index')}}" class="button">Назад</a><br>
         <?php echo $reviews->render(); ?>
     </div>
 @endsection
