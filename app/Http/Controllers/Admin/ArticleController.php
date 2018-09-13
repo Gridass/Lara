@@ -106,6 +106,7 @@ class ArticleController extends Controller
             $article->categories()->attach($request->input('categories'));
         endif;
 
+
         return redirect()->route('admin.article.index');
     }
 
