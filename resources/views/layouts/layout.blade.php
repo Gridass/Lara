@@ -26,8 +26,16 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <![endif]-->
+    <style>
+        body {
+            background: #c7b39b url(images/background.jpg);
+            color: #FFFFFF;
+
+        }
+    </style>
 </head>
 <body>
+
 <a href="/" class="btn btn-default">Перейти к новостям</a></p>
 
 @include('layouts.headerNavigation')

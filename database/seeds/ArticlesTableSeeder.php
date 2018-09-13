@@ -14,7 +14,7 @@ class ArticlesTableSeeder extends Seeder
         DB::table('articles')->insert([
             'title' => str_random(8),
             'slug' => str_random(12),
-            'image' => rand(1,7).'.png',
+            'image' => rand(1,4).'.png',
             'description_short' => str_random('12'),
             'description' => str_random('124'),
             'published' => '1',
