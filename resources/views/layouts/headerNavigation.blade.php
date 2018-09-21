@@ -27,7 +27,7 @@
                 <li><a class="active" href="/reviews">Reviews</a></li>
                 <li><a href="/reviews/create">Create review</a></li>
                 @guest
-                <<li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
                 </li>
                 <li class="nav-item">

@@ -49,6 +49,8 @@ Route::delete('/posts/{post}', "PostsController@destroy");
  * DELETE /posts/{ID}
  *
  */
-
+//Route::get('/home', function () {
+//    return view('/home');
+//})->name('home');
 
 

@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 @section('content')
-    <h2 align="center">Posts</h2>
+    <h1 align="center"><b>Posts</b></h1>
     <div class="row" align="center">
     @foreach($articles as $article)
         <div class="col-md-4">
