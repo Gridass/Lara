@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 
-@section('title', $category->title . " - DKA-DEVELOP")
+@section('title', $category->title)
 
 @section('content')
 

@@ -20,7 +20,6 @@
             <label for="message">Text</label>
             <textarea class="form-control" pattern="^[A-Za-zА-Яа-яЁё\s]+$" type="text" name="message" id="message" required></textarea>
         </div>
-        <div class="g-recaptcha" data-sitekey="6LdLIF4UAAAAAG0W6wfH6DAMgejHNE2RAyUOvRwV"></div>
 
         <div class="form-group" style="position:fixed; top:85%; left:6%">
             <button class="btn btn-primary" type="submit">Create</button>

@@ -7,7 +7,7 @@
 
                 <h2 class="blog-post-title" align="center">{{$article->title}}</h2>
                 <p><img src="/images/{{ $article->image }}" width="100%"></p>
-                <font size="4"><p>{{$article->description}}</p></font>
+                <div style="word-wrap: break-word"><font size="4">{{$article->description}}</font></div>
             </div>
         </div>
     </div>

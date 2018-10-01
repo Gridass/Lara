@@ -1,13 +1,3 @@
-<head><!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125145066-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-125145066-1');
-    </script>
-</head>
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
 
@@ -18,12 +8,12 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/admin">Apollo</a>
+            <a class="navbar-brand" href="/home">Home</a>
         </div>
 
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li><a class="active" href="/">Portfolio</a></li>
+                <li><a class="active" href="/">Newspaper</a></li>
                 <li><a class="active" href="/reviews">Reviews</a></li>
                 <li><a href="/reviews/create">Create review</a></li>
                 @guest

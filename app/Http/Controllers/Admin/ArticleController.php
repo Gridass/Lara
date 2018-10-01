@@ -55,6 +55,8 @@ class ArticleController extends Controller
 
         $imgName = ($article->id . '.' . $request->file('image')->getClientOriginalExtension());
         $image = Image::make($request->file('image'));
+        $image->resize(1366, 786);
+        $image->response('jpg');
         $fullPath = public_path('/images/');
         $image->save($fullPath . DIRECTORY_SEPARATOR . $imgName);
         $article->image = $imgName;
